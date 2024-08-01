@@ -2,7 +2,7 @@
   "name": "dio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thompsoncarlos.github.io/",
+  "homepage": "https://thompsoncarlos.github.io/react-desafio03-dio/",
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@testing-library/jest-dom": "^5.17.0",
