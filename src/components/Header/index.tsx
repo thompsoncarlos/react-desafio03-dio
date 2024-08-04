@@ -12,13 +12,18 @@ import {
 } from './styles';
 
 import { useNavigate } from 'react-router-dom';
+import { IHeader } from './types';
 
-export default function Header({autenticado}) {
+export default function Header({autenticado}: IHeader) {
 
   const navigate = useNavigate();
 
   const handleClickSignIn = () => {
     navigate("/login")
+  }
+
+  const handleClickSignUp = () => {
+    navigate("/cadastro")
   }
   
   return (
@@ -43,7 +48,7 @@ export default function Header({autenticado}) {
             <>
               <MenuRight href="#">Home</MenuRight>
               <Button title="Entrar" onClick={handleClickSignIn}/>
-              <Button title="Cadastrar" onClick={handleClickSignIn}/>
+              <Button title="Cadastrar" onClick={handleClickSignUp}/>
             </>
           )}
         </Row>

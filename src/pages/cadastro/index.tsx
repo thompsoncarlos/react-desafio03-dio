@@ -21,6 +21,7 @@ import {
   Description
 } from './styles';
 import { MdEmail, MdLock, MdPerson } from "react-icons/md";
+import { IFormData } from "./types";
 
 const schema = yup.object({
   name: yup.string().required('Campo obrigatório'),
@@ -34,7 +35,7 @@ export default function Cadastro() {
     mode: 'onChange'
   })
 
-  const onSubmit = async formData => {
+  const onSubmit = async (formData: IFormData) => {
     try {
       const { data } =  await api.post(`/users`, formData)
 
@@ -42,8 +43,8 @@ export default function Cadastro() {
         navigate('/feed')
         return
       }
-    } catch(error) {
-      alert("Erro ao enviar dados", error);
+    } catch(e) {
+      alert("Erro ao enviar dados");
     }
   }
 
