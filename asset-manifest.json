@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/react-desafio03-dio/static/js/main.72186133.js",
+    "main.js": "/react-desafio03-dio/static/js/main.257c3feb.js",
     "static/media/banner.png": "/react-desafio03-dio/static/media/banner.9ab4ead1c68ede88f1ce.png",
     "index.html": "/react-desafio03-dio/index.html",
-    "main.72186133.js.map": "/react-desafio03-dio/static/js/main.72186133.js.map"
+    "main.257c3feb.js.map": "/react-desafio03-dio/static/js/main.257c3feb.js.map"
   },
   "entrypoints": [
-    "static/js/main.72186133.js"
+    "static/js/main.257c3feb.js"
   ]
 }
